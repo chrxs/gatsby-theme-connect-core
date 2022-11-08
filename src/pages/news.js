@@ -1,16 +1,16 @@
 import * as React from "react";
 import { Button } from "theme-ui";
 
-const IndexPage = () => {
+const NewsPage = () => {
   return (
     <main>
-      <h1>Home Page</h1>
+      <h1>NEWS Page</h1>
 
       <Button>Button</Button>
     </main>
   );
 };
 
-export default IndexPage;
+export default NewsPage;
 
 export const Head = () => <title>Home Page</title>;
