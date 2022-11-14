@@ -1,16 +1,22 @@
 import * as React from "react";
-import { Button } from "theme-ui";
+
+import RecommendationsPage from "recommendations/RecommendationsPage";
 
 const IndexPage = () => {
-  return (
-    <main>
-      <h1>Home Page</h1>
+  // 1. get data
+  const recommendations = [{
+    id: 1,
+    name: "Restaurant"
+  }, {
+    id: 2,
+    name: "Spa"
+  }]
+  // 2. modify data
+  // 3. send to Page component
 
-      <Button>Button</Button>
-    </main>
-  );
+  return <RecommendationsPage recommendations={recommendations} />;
 };
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>Recommendations</title>;
