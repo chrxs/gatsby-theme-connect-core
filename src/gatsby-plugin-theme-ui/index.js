@@ -1,12 +1,29 @@
 const theme = {
-  colors: {
-    text: "#333",
-    background: "#fff",
-    // primary: "#639",
-    // secondary: "#ff6347",
-    primary: "red",
-    secondary: "#fc0",
+  config: {
+    initialColorModeName: "light",
   },
+
+  colors: {
+    text: "rgba(49, 34, 14, 0.87)",
+    textHeading: "#31140E",
+    background: "#FEFCF9",
+    primaryMain: "#A06B22",
+    primaryDark: "#724C18",
+    primaryLight: "#D49135",
+    primaryContrastText: "#FFFFFF",
+    modes: {
+      dark: {
+        text: "rgba(255, 255, 255, 0.87)",
+        textHeading: "#FFFFFF",
+        background: "#121212",
+        primaryMain: "#E3B87D",
+        primaryDark: "#F0D8B8",
+        primaryLight: "#D99F4F",
+        primaryContrastText: "#121212",
+      },
+    },
+  },
+
   fonts: {
     body: "system-ui, sans-serif",
     heading: "system-ui, sans-serif",
@@ -23,6 +40,33 @@ const theme = {
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+
+  // variants
+  links: {
+    base: {
+      color: "primaryMain"
+    }
+  },
+
+  buttons: {
+    primary: {
+      cursor: "pointer",
+      color: "primaryContrastText",
+      bg: "primaryMain",
+      "&:hover,&:focus": {
+        bg: "primaryDark",
+      },
+    },
+  },
+
+  styles: {
+    root: {
+      background: "background",
+      fontFamily: "body",
+      lineHeight: "body",
+      fontWeight: "body",
+    }
+  },
 };
 
 export default theme;

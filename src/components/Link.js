@@ -3,9 +3,7 @@ import { jsx, Link as ThemeUILink } from "theme-ui";
 import { Link as GatsbyLink } from "gatsby";
 
 function Link({ to, ...props }) {
-  const sx = {
-    color: "secondary"
-  };
+  const sx = {};
 
   if (to && to.startsWith("http")) {
     const aProps = {
